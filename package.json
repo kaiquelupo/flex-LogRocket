@@ -1,0 +1,23 @@
+{
+  "name": "plugin-logRocket",
+  "version": "0.0.4",
+  "private": true,
+  "scripts": {
+    "postinstall": "flex-plugin pre-script-check"
+  },
+  "dependencies": {
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "flex-plugin-scripts": "^4.3.4-beta.0",
+    "loglevel": "^1.7.1",
+    "loglevel-plugin-remote": "^0.6.8",
+    "loglevel-server-send": "^1.0.0",
+    "logrocket": "^1.0.14",
+    "logrocket-react": "^4.0.1",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "redux-dynamic-middlewares": "^2.0.0"
+  },
+  "devDependencies": {
+    "@twilio/flex-ui": "^1"
+  }
+}
