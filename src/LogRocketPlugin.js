@@ -2,7 +2,6 @@ import { VERSION } from '@twilio/flex-ui';
 import { FlexPlugin } from 'flex-plugin';
 import LogRocket from 'logrocket';
 import setupLogRocketReact from 'logrocket-react';
-// import flushToConsole from './utils/flushToConsole';
 
 import reducers, { namespace } from './states';
 
@@ -23,14 +22,6 @@ export default class LogRocketPlugin extends FlexPlugin {
   init(flex, manager) {
 
     this.registerReducers(manager);
-    
-    manager.updateConfig({
-      ...manager.configuration,
-      logLevel: "debug"
-    });
-    
-    // TODO: wait for Flex change to allow this functionality 
-    //flushToConsole();
 
     LogRocket.init('jsuv4u/operation-mixed-infra');
 
@@ -43,7 +34,6 @@ export default class LogRocketPlugin extends FlexPlugin {
     });
 
     setupLogRocketReact(LogRocket);
-
 
   }
 
